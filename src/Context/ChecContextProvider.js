@@ -5,7 +5,7 @@ const ChecResultContext = createContext();
 export const ChecContextProvider = ({ children }) => {
   const [products, setProducts] = useState(null);
   const [categories, setCategories] = useState(null);
-  const [isProductsLoading, setIsProductsLoading] = useState(true);
+  const [isProductsLoading, setIsProductsLoading] = useState(false);
   const [singleProduct, setSingleProduct] = useState(null);
   const [isSingleProductLoading, setIsSingleProductLoading] = useState(true);
   const [isCartLoading, setIsCartLoading] = useState(false);
