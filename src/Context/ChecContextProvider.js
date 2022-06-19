@@ -130,7 +130,7 @@ export const ChecContextProvider = ({ children }) => {
 
   // Retrieve a product by it's ID
   const getSingleProduct = (productId) => {
-    setIsSingleProductLoading(false);
+    setIsSingleProductLoading(true);
     commerce.products
       .retrieve(productId)
       .then((response) => {
