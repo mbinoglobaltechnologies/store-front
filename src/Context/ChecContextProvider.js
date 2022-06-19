@@ -139,6 +139,7 @@ export const ChecContextProvider = ({ children }) => {
       })
       .catch((error) => {
         console.log("There was an error fetching the products", error);
+        setSingleProduct("404");
         setIsSingleProductLoading(false);
       });
   };
